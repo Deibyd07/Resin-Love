@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useMotionValue, useAnimationFrame, type Easing } from "framer-motion";
@@ -13,12 +13,6 @@ import { CartButton } from "@/components/ui/cart-button";
 const heroImage = "/images/Fondo Hero.png";
 const logoImage = "/images/logo-resin-love.png";
 const heroHighlights = ["Hecho a mano", "Personalizable", "Envíos nacionales"];
-
-const currency = new Intl.NumberFormat("es-CO", {
-  style: "currency",
-  currency: "COP",
-  maximumFractionDigits: 0,
-});
 
 const stagger = {
   hidden: {},

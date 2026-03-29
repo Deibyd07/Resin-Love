@@ -42,7 +42,7 @@ export const useCartUIStore = create<CartUIState>((set) => ({
 
 export function CartDrawer() {
   const { isOpen, closeCart } = useCartUIStore();
-  const { items, updateQuantity, removeItem, getCartTotal, clearCart } = useCartStore();
+  const { items, updateQuantity, removeItem, getCartTotal } = useCartStore();
 
   // Lock body scroll when drawer is open
   useEffect(() => {
